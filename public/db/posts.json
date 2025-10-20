@@ -1,0 +1,222 @@
+[
+  {
+    "id": 1,
+    "name": "SamAltman - CEO @OpenAI",
+    "username": "@samaltman",
+    "text": "Hoy en @OpenAI lanzamos una nueva actualización de GPT-5. Es el modelo más avanzado que hemos desarrollado hasta la fecha: más natural, más seguro y profundamente útil para millones de personas. Cada mejora está diseñada para hacer que la inteligencia artificial sea más accesible y confiable para todos 🚀",
+    "image": "image.png",
+    "likes": 24500,
+    "comments": 320,
+    "reposts": 1100,
+    "views": "1.1M"
+  },
+  {
+    "id": 2,
+    "name": "JaneDoe",
+    "username": "@janedoe",
+    "text": "GPT-5 realmente redefine cómo interactuamos con la inteligencia artificial 🤖. Las conversaciones fluyen de una forma casi humana, y su capacidad para entender contexto es impresionante. Es como hablar con alguien que realmente comprende lo que quieres decir, no solo lo que escribes.",
+    "image": "image.png",
+    "likes": 10200,
+    "comments": 145,
+    "reposts": 480,
+    "views": "820k"
+  },
+  {
+    "id": 3,
+    "name": "CarlosTech",
+    "username": "@carlostech",
+    "text": "Probando GPT-5 para automatizar documentación técnica. Impresionante la fluidez 😍. Ahora puede generar manuales completos y coherentes con solo unas pocas instrucciones, reduciendo el tiempo de redacción en más del 60%. Es una herramienta que cambiará la forma en que escribimos contenido técnico.",
+    "image": "image.png",
+    "likes": 6800,
+    "comments": 97,
+    "reposts": 210,
+    "views": "510k"
+  },
+  {
+    "id": 4,
+    "name": "AI_Explorer",
+    "username": "@ai_explorer",
+    "text": "El nuevo modelo de GPT-5 maneja contextos más largos y muestra un razonamiento mucho más coherente 🔥. Lo probé con tareas complejas de análisis y mantiene el hilo de conversación incluso después de varios párrafos. La evolución respecto a GPT-4 es abismal.",
+    "image": "image.png",
+    "likes": 8900,
+    "comments": 180,
+    "reposts": 420,
+    "views": "640k"
+  },
+  {
+    "id": 5,
+    "name": "TechLover",
+    "username": "@techlover",
+    "text": "No puedo creer cómo GPT-5 entiende emociones en texto. Esto es otro nivel 🧠❤️. Le pedí que redactara mensajes empáticos para atención al cliente y logró un tono natural y humano. Es increíble ver cómo la IA está aprendiendo a conectar con nuestras emociones.",
+    "image": "image.png",
+    "likes": 12400,
+    "comments": 230,
+    "reposts": 540,
+    "views": "710k"
+  },
+  {
+    "id": 6,
+    "name": "DataMind - Lead Scientist @AIAnalytics",
+    "username": "@datamind",
+    "text": "Estamos integrando GPT-5 en análisis predictivo. Los resultados iniciales muestran un aumento del 30% en precisión 📊. Lo más sorprendente es su habilidad para explicar el porqué de sus predicciones, algo que acerca a la IA a la interpretabilidad real.",
+    "image": "image.png",
+    "likes": 5600,
+    "comments": 84,
+    "reposts": 200,
+    "views": "420k"
+  },
+  {
+    "id": 7,
+    "name": "LauraDev",
+    "username": "@lauradev",
+    "text": "Lo que más me sorprende de GPT-5 es su coherencia en conversaciones largas 👏. He estado probándolo en proyectos de atención automatizada y logra mantener el tono y la intención durante interacciones extensas. Es la primera vez que siento que la IA realmente 'sigue' una conversación.",
+    "image": "image.png",
+    "likes": 7300,
+    "comments": 120,
+    "reposts": 310,
+    "views": "530k"
+  },
+  {
+    "id": 8,
+    "name": "AIStudio - Creative Director @AI_Design",
+    "username": "@aistudio",
+    "text": "GPT-5 + herramientas visuales = contenido creativo sin límites 🎨✨. He combinado el modelo con generadores de imagen y el resultado es impresionante: guiones, storyboards y prompts visuales en segundos. La colaboración entre lenguaje y arte digital nunca había sido tan fluida.",
+    "image": "image.png",
+    "likes": 9400,
+    "comments": 132,
+    "reposts": 350,
+    "views": "600k"
+  },
+  {
+    "id": 9,
+    "name": "TechNews",
+    "username": "@technews",
+    "text": "OpenAI acaba de lanzar GPT-5 y el impacto en la industria será enorme 💥. Con mejoras significativas en comprensión contextual, memoria a largo plazo y reducción de errores, promete transformar la productividad empresarial. Analistas ya lo consideran un hito tecnológico.",
+    "image": "image.png",
+    "likes": 18500,
+    "comments": 410,
+    "reposts": 890,
+    "views": "950k"
+  },
+  {
+    "id": 10,
+    "name": "NeuralGuy",
+    "username": "@neuralguy",
+    "text": "Probando GPT-5 en tareas científicas complejas ⚗️. Su razonamiento lógico mejoró notablemente, permitiendo resolver problemas con múltiples variables y pasos intermedios. Es un avance clave para investigación automatizada y generación de hipótesis científicas.",
+    "image": "image.png",
+    "likes": 8100,
+    "comments": 160,
+    "reposts": 400,
+    "views": "580k"
+  },
+  {
+    "id": 11,
+    "name": "CoderAI",
+    "username": "@coderai",
+    "text": "Con GPT-5 estoy generando código con comentarios automáticos y documentación 🔥💻. Ahora explica cada bloque en lenguaje natural, lo que facilita la colaboración entre equipos técnicos y no técnicos. Programar nunca fue tan intuitivo.",
+    "image": "image.png",
+    "likes": 9700,
+    "comments": 200,
+    "reposts": 430,
+    "views": "610k"
+  },
+  {
+    "id": 12,
+    "name": "AI_Artist - Founder @CreativeAI",
+    "username": "@ai_artist",
+    "text": "Usando GPT-5 para generar prompts artísticos más ricos y expresivos 🎭. Su capacidad para entender estilos, emociones y referencias visuales es increíble. Me ayudó a crear descripciones detalladas que inspiran resultados visuales únicos.",
+    "image": "image.png",
+    "likes": 6700,
+    "comments": 95,
+    "reposts": 210,
+    "views": "490k"
+  },
+  {
+    "id": 13,
+    "name": "EduTech",
+    "username": "@edutech",
+    "text": "GPT-5 está transformando cómo enseñamos y aprendemos idiomas 🌍📚. Los estudiantes pueden practicar conversaciones naturales y recibir retroalimentación contextual. Es como tener un tutor inteligente disponible las 24 horas.",
+    "image": "image.png",
+    "likes": 8900,
+    "comments": 170,
+    "reposts": 380,
+    "views": "550k"
+  },
+  {
+    "id": 14,
+    "name": "FutureLab - CTO @InnovationHub",
+    "username": "@futurelab",
+    "text": "La comprensión contextual de GPT-5 abre nuevas posibilidades para la automatización 🤯. Ahora puede manejar procesos completos de comunicación empresarial, entender instrucciones complejas y adaptarse a distintos tonos. La productividad está a punto de multiplicarse.",
+    "image": "image.png",
+    "likes": 9300,
+    "comments": 150,
+    "reposts": 360,
+    "views": "600k"
+  },
+  {
+    "id": 15,
+    "name": "AI_Geek",
+    "username": "@ai_geek",
+    "text": "El modelo GPT-5 tiene menos alucinaciones y genera respuestas mucho más precisas 📘. En pruebas comparativas, logró mantener consistencia incluso con datos ambiguos. Esto marca un avance crucial en la fiabilidad de los modelos de lenguaje.",
+    "image": "image.png",
+    "likes": 7900,
+    "comments": 140,
+    "reposts": 290,
+    "views": "520k"
+  },
+  {
+    "id": 16,
+    "name": "BetaTester",
+    "username": "@betatester",
+    "text": "He estado probando GPT-5 Beta y puedo decir que es el salto más grande desde GPT-4 🚀. La comprensión, la memoria y la naturalidad de las respuestas son impresionantes. Es como hablar con alguien que realmente piensa antes de responder.",
+    "image": "image.png",
+    "likes": 10400,
+    "comments": 210,
+    "reposts": 470,
+    "views": "670k"
+  },
+  {
+    "id": 17,
+    "name": "SophieAI",
+    "username": "@sophieai",
+    "text": "GPT-5 está ayudando a ONGs a generar informes automatizados y resúmenes 💬🌱. Además, puede analizar datos de impacto y redactar conclusiones claras en segundos. Esto libera tiempo para que las personas se concentren en lo que realmente importa: ayudar.",
+    "image": "image.png",
+    "likes": 7200,
+    "comments": 130,
+    "reposts": 250,
+    "views": "480k"
+  },
+  {
+    "id": 18,
+    "name": "NextGenAI - VP Engineering @TechFuture",
+    "username": "@nextgenai",
+    "text": "Lo más impresionante de GPT-5 es su tono natural en distintos idiomas 🌐. He probado traducciones técnicas y coloquiales, y en ambos casos mantiene coherencia cultural y semántica. El salto multilingüe es impresionante.",
+    "image": "image.png",
+    "likes": 9100,
+    "comments": 175,
+    "reposts": 340,
+    "views": "590k"
+  },
+  {
+    "id": 19,
+    "name": "MartaCoder",
+    "username": "@martacoder",
+    "text": "Integré GPT-5 con mi workflow en VSCode y ahora escribo 2x más rápido ⚡. Puede sugerir funciones completas, explicar errores y optimizar código en tiempo real. Es como tener un compañero de programación que nunca se cansa.",
+    "image": "image.png",
+    "likes": 8500,
+    "comments": 190,
+    "reposts": 310,
+    "views": "560k"
+  },
+  {
+    "id": 20,
+    "name": "AI_Dreamer",
+    "username": "@ai_dreamer",
+    "text": "GPT-5 marca el inicio de una nueva era en inteligencia artificial 🌌. Su capacidad para entender matices, emociones y contexto la hace más cercana al pensamiento humano que nunca. Esto es solo el comienzo de algo realmente transformador.",
+    "image": "image.png",
+    "likes": 12800,
+    "comments": 260,
+    "reposts": 520,
+    "views": "740k"
+  }
+]
