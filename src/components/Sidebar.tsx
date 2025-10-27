@@ -2,7 +2,6 @@ import { Search, SlidersHorizontal } from 'lucide-react';
 import { useState } from 'react';
 
 
-// RightSidebar Component (Trending + Follow)
 const RightSidebar = () => {
   const [following, setFollowing] = useState<any>({});
 
@@ -19,12 +18,12 @@ const RightSidebar = () => {
     { name: 'MarkZuckerberg', handle: '@markzuckerberg', title: '@Meta', verified: true }
   ];
 
-  const toggleFollow = (handle: string) => {
+  const toggleFollow = (handle: string) => {  
     setFollowing(prev => ({ ...prev, [handle]: !prev[handle] }));
   };
 
   return (
-    <div className="min-h-screen from-slate-950 via-blue-950 to-slate-900 p-6 space-y-6">
+  <div className="min-h-screen w-[490px] from-slate-950 via-blue-950 to-slate-900 p-6 space-y-6">
       {/* Search + Filter */}
       <div className="flex gap-3">
         <div className="flex-1 relative">
