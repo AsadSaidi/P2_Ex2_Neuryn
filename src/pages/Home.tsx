@@ -3,7 +3,7 @@ import PostsSection from "../components/PostSections";
 
 import Sidebar from "../components/Sidebar";
 
-export const Home = () => {
+ const Home = () => {
   return (
     <div className="bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 min-h-screen">
   <Header />
@@ -22,3 +22,5 @@ export const Home = () => {
 
   );
 };
+
+export default Home;

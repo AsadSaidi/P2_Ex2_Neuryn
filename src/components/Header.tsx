@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export const Header = () => {
   return (
     <div className="flex items-center justify-between px-6 py-4 bg-slate-900/40 backdrop-blur-sm border-b border-slate-700/50 shadow-xl">
@@ -21,6 +23,9 @@ export const Header = () => {
             </li>
             <li className="hover:text-slate-300 cursor-pointer">
               <a>Comunidades</a>
+            </li>
+            <li className="hover:text-slate-300 cursor-pointer">
+              <a><Link to="/Contacto">Contacto</Link></a>
             </li>
           </ul>
         </nav>
