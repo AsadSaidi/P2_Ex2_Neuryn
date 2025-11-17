@@ -24,11 +24,11 @@ export const Header = () => {
             <li className={`hover:text-slate-300 cursor-pointer ${isActive("/")}`}>
               <Link to="/">Inicio</Link>
             </li>
-            <li className={`hover:text-slate-300 cursor-pointer ${isActive("/explorar")}`}>
-              <Link to="/explorar">Explorar</Link>
+            <li className={`hover:text-slate-300 cursor-pointer ${isActive("/Explorar")}`}>
+              <Link to="/Explorar">Explorar</Link>
             </li>
-            <li className={`hover:text-slate-300 cursor-pointer ${isActive("/comunidades")}`}>
-              <Link to="/comunidades">Comunidades</Link>
+            <li className={`hover:text-slate-300 cursor-pointer ${isActive("/Comunidades")}`}>
+              <Link to="/Comunidades">Comunidades</Link>
             </li>
             <li className={`hover:text-slate-300 cursor-pointer ${isActive("/Contacto")}`}>
               <Link to="/Contacto">Contacto</Link>
