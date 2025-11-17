@@ -1,6 +1,12 @@
 import { Link } from 'react-router-dom';
 
 export const Header = () => {
+
+  const isActive = (path: string) => {
+    return window.location.pathname === path
+      ? "text-blue-400 font-semibold"
+      : "";
+  }
   return (
     <div className="flex items-center justify-between px-6 py-4 bg-slate-900/40 backdrop-blur-sm border-b border-slate-700/50 shadow-xl">
       {/* Logo y Navegación juntos */}
@@ -15,17 +21,17 @@ export const Header = () => {
         {/* Navegación */}
         <nav>
           <ul className="flex space-x-8 text-white text-base font-normal">
-            <li className="hover:text-slate-300 cursor-pointer">
-              <a>Inicio</a>
+            <li className={`hover:text-slate-300 cursor-pointer ${isActive("/")}`}>
+              <Link to="/">Inicio</Link>
             </li>
-            <li className="hover:text-slate-300 cursor-pointer">
-              <a>Explorar</a>
+            <li className={`hover:text-slate-300 cursor-pointer ${isActive("/explorar")}`}>
+              <Link to="/explorar">Explorar</Link>
             </li>
-            <li className="hover:text-slate-300 cursor-pointer">
-              <a>Comunidades</a>
+            <li className={`hover:text-slate-300 cursor-pointer ${isActive("/comunidades")}`}>
+              <Link to="/comunidades">Comunidades</Link>
             </li>
-            <li className="hover:text-slate-300 cursor-pointer">
-              <a><Link to="/Contacto">Contacto</Link></a>
+            <li className={`hover:text-slate-300 cursor-pointer ${isActive("/Contacto")}`}>
+              <Link to="/Contacto">Contacto</Link>
             </li>
           </ul>
         </nav>
