@@ -14,7 +14,7 @@ export const Header = () => {
         {/* Logo */}
         <img
           className="w-12 h-auto cursor-pointer"
-          src="../src/assets/cerebro.png"
+          src="../src/assets/cerebro.webp"
           alt="logo"
         />
 
@@ -41,17 +41,17 @@ export const Header = () => {
       <div className="flex items-center space-x-6">
         <img
           className="w-6 h-6 cursor-pointer hover:scale-110 transition-transform duration-200"
-          src="../src/assets/agregar.png"
+          src="../src/assets/agregar.webp"
           alt="agregar"
         />
         <img
           className="w-6 h-6 cursor-pointer hover:scale-110 transition-transform duration-200"
-          src="../src/assets/notificacion.png"
+          src="../src/assets/notificacion.webp"
           alt="notificacion"
         />
         <img
           className="w-8 h-8 rounded-full cursor-pointer hover:scale-105 transition-transform duration-200"
-          src="../src/assets/usuario.png"
+          src="../src/assets/usuario.webp"
           alt="usuario"
         />
       </div>

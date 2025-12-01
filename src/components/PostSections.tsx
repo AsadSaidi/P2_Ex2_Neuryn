@@ -65,12 +65,8 @@ const PostsSection = () => {
           {/* Imágenes */}
           <div className="mt-3 flex flex-wrap gap-2">
             <img
-              src="https://static.vecteezy.com/system/resources/previews/004/141/669/non_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
-              className="rounded-2xl border border-slate-700/50 w-[48%] object-cover"
-            />
-            <img
-              src="https://static.vecteezy.com/system/resources/previews/004/141/669/non_2x/no-photo-or-blank-image-icon-loading-images-or-missing-image-mark-image-not-available-or-image-coming-soon-sign-simple-nature-silhouette-in-frame-isolated-illustration-vector.jpg"
-              className="rounded-2xl border border-slate-700/50 w-[48%] object-cover"
+              src="../src/assets/openai.webp"
+              className="rounded-2xl border border-slate-700/50 w-100%] object-cover"
             />
           </div>
 
@@ -84,7 +80,7 @@ const PostsSection = () => {
                 {post.comments} 
               </span>
               <span className="hover:text-white cursor-pointer flex row-gap-2 items-center gap-1">
-                <img src="../src/assets/repeat.png" alt="compartir"/>
+                <img src="../src/assets/repeat.webp" alt="compartir"/>
                 {post.reposts}
               </span>
               <span className="hover:text-pink-500 cursor-pointer flex row-gap-2 items-center gap-1">
