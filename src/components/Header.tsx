@@ -33,6 +33,9 @@ export const Header = () => {
             <li className={`hover:text-slate-300 cursor-pointer ${isActive("/Contacto")}`}>
               <Link to="/Contacto">Contacto</Link>
             </li>
+            <li className={`hover:text-slate-300 cursor-pointer ${isActive("/SobreNosotros")}`}>
+              <Link to="/SobreNosotros">Sobre nosotros</Link>
+            </li>
           </ul>
         </nav>
       </div>

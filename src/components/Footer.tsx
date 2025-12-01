@@ -1,4 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Footer: React.FC = () => {
   return (
@@ -7,7 +9,10 @@ const Footer: React.FC = () => {
         <nav>
           <ul className="flex space-x-8 text-white text-base font-normal">
             <li className="hover:text-slate-300 cursor-pointer">
-              <a href="mailto:info@neuryn.com">Contacto</a>
+              <Link to="/">Inicio</Link>
+            </li>
+            <li className="hover:text-slate-300 cursor-pointer">
+              <Link to="/Contacto">Contacto</Link>
             </li>
             <li className="hover:text-slate-300 cursor-pointer">
               <a href="#">Términos y Condiciones</a>
@@ -16,7 +21,7 @@ const Footer: React.FC = () => {
               <a href="#">Política de Privacidad</a>
             </li>
             <li className="hover:text-slate-300 cursor-pointer">
-              <a href="#">Sobre Nosotros</a>
+              <Link to="/SobreNosotros">Sobre nosotros</Link>
             </li>
           </ul>
         </nav>
