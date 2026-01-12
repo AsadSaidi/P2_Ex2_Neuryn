@@ -10,8 +10,8 @@ const SobreNosotros = () => {
             <VideoPlayer/>
             <div className="relative z-10 flex-1 flex flex-col">
               <Header />
-              <div className="flex-1 flex items-center justify-center flex-col px-6 py-12 space-y-6">
-                <h1 className="text-4xl font-bold mb-4 text-white">Sobre Nosotros</h1>
+              <div className="flex-1 flex items-center justify-center flex-col px-2 sm:px-4 py-6 space-y-6">
+                <h1 className="text-4xl font-bold mb-4 text-white text-center">Sobre Nosotros</h1>
                   <p className="text-lg text-slate-300 max-w-2xl text-center">
                    En Neuryn, nuestra misión es conectar mentes curiosas y fomentar una comunidad vibrante donde las ideas fluyan libremente. Fundada en 2023, Neuryn ha crecido rápidamente para convertirse en un espacio donde los usuarios pueden explorar, compartir y colaborar en proyectos innovadores.
                   </p>
@@ -21,7 +21,7 @@ const SobreNosotros = () => {
                   <p className="text-lg text-slate-300 max-w-2xl text-center mt-4">
                       Gracias por ser parte de Neuryn. Juntos, estamos construyendo el futuro de la interacción digital.
                   </p>
-                  <h2 className="text-2xl font-bold mb-4 text-white">
+                  <h2 className="text-2xl font-bold mb-4 text-white text-center">
                     Un mensaje especial de nuestro CEO:
                   </h2>
                   <AudioPlayer/>

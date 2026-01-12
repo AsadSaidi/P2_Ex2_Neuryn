@@ -1,7 +1,15 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
+
 
 const Formulario = ()=> {
     const [enviado, setEnviado] = useState(false);
+    const nombreRef = useRef<HTMLInputElement>(null);
+
+    useEffect(() => {
+        if (nombreRef.current) {
+            nombreRef.current.focus();
+        }
+    }, []);
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
@@ -13,7 +21,7 @@ const Formulario = ()=> {
             <h1 className="text-4xl font-bold text-white mb-6 text-center">Contacto</h1>
             <label className="flex flex-col gap-2 text-slate-200 text-lg">
                 Nombre:
-                <input type="text" name="nombre" className="bg-slate-800/60 border border-slate-700 rounded-lg px-6 py-3 text-white focus:outline-none focus:border-blue-500/50 focus:bg-slate-900/70 transition-all text-lg" />
+                <input ref={nombreRef} type="text" name="nombre" className="bg-slate-800/60 border border-slate-700 rounded-lg px-6 py-3 text-white focus:outline-none focus:border-blue-500/50 focus:bg-slate-900/70 transition-all text-lg" />
             </label>
             <label className="flex flex-col gap-2 text-slate-200 text-lg">
                 Correo Electrónico:
