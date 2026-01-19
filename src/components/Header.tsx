@@ -39,6 +39,9 @@ export const Header = () => {
               <li className={`hover:text-slate-300 cursor-pointer ${isActive("/SobreNosotros")}`} tabIndex={0}>
                 <Link to="/SobreNosotros" aria-label="Ir a sobre nosotros">Sobre nosotros</Link>
               </li>
+              <li className={`hover:text-slate-300 cursor-pointer ${isActive("/Guia")}`} tabIndex={0}>
+                <Link to="/Guia" aria-label="Ir a guía de estudio">Guía</Link>
+              </li>
             </ul>
           </nav>
 
@@ -130,6 +133,9 @@ export const Header = () => {
             </li>
             <li className={isActive("/SobreNosotros")} tabIndex={0}>
               <Link to="/SobreNosotros" onClick={() => setSidebarOpen(false)} aria-label="Ir a sobre nosotros">Sobre nosotros</Link>
+            </li>
+            <li className={isActive("/Guia")} tabIndex={0}>
+              <Link to="/Guia" onClick={() => setSidebarOpen(false)} aria-label="Ir a guía de estudio"> Guía</Link>
             </li>
           </ul>
         </nav>
