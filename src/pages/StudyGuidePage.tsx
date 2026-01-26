@@ -24,7 +24,7 @@ const StudyGuidePage = () => {
               <ul className="list-disc list-inside space-y-2 text-slate-300">
                 <li>Instalar <code className="bg-slate-800 px-2 py-1 rounded">react-router-dom</code></li>
                 <li>Usar <code className="bg-slate-800 px-2 py-1 rounded">&lt;BrowserRouter&gt;</code> como contenedor principal</li>
-                <li>Definir rutas con <code className="bg-slate-800 px-2 py-1 rounded">&lt;Routes&gt;</code> y <code className="bg-slate-800 px-2 py-1 rounded">&lt;Route&gt;</code></li>
+                <li>Definir rutas with <code className="bg-slate-800 px-2 py-1 rounded">&lt;Routes&gt;</code> y <code className="bg-slate-800 px-2 py-1 rounded">&lt;Route&gt;</code></li>
                 <li>Navegar con <code className="bg-slate-800 px-2 py-1 rounded">&lt;Link&gt;</code> o <code className="bg-slate-800 px-2 py-1 rounded">&lt;NavLink&gt;</code></li>
               </ul>
               
@@ -251,20 +251,22 @@ function SearchForm() {
           {/* 5. Multimedia */}
           <section className="space-y-4 border-l-4 border-red-500 pl-6">
             <h2 className="text-2xl font-bold text-red-400"> 5. Contenido multimedia en React</h2>
-            
             <div className="space-y-3">
               <h3 className="text-xl font-semibold text-white">🔹 Galería de imágenes</h3>
               <ul className="list-disc list-inside space-y-2 text-slate-300">
                 <li>Usar formatos optimizados: <strong>WebP / AVIF</strong></li>
                 <li>Incluir siempre <code className="bg-slate-800 px-2 py-1 rounded">alt</code> descriptivo</li>
                 <li>Usar <code className="bg-slate-800 px-2 py-1 rounded">loading="lazy"</code> para optimizar</li>
+                <li>Usar <code className="bg-slate-800 px-2 py-1 rounded">srcSet</code> y <code className="bg-slate-800 px-2 py-1 rounded">sizes</code> para imágenes responsive</li>
               </ul>
 
               <div className="bg-slate-800/50 border border-slate-700 rounded-lg p-4 mt-3">
-                <p className="font-semibold text-white mb-2">Ejemplo de imagen optimizada:</p>
+                <p className="font-semibold text-white mb-2">Ejemplo de imagen optimizada y responsive:</p>
                 <pre className="text-sm text-slate-300 overflow-x-auto">
 {`<img 
-  src="foto.webp" 
+  src="foto-640.webp" 
+  srcSet="foto-320.webp 320w, foto-640.webp 640w, foto-1280.webp 1280w" 
+  sizes="(max-width: 640px) 320px, (max-width: 1024px) 640px, 1280px" 
   alt="Descripción de la foto" 
   loading="lazy"
   width="400"
