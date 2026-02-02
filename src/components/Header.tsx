@@ -18,7 +18,11 @@ export const Header = () => {
             className="w-12 h-auto cursor-pointer"
             src="../src/assets/cerebro.webp"
             alt="logo Neuryn"
-            role="img"
+            width={48}
+            height={48}
+            fetchPriority="high"
+            srcSet="../src/assets/cerebro-32.webp 32w, ../src/assets/cerebro-64.webp 64w, ../src/assets/cerebro-128.webp 128w, ../src/assets/cerebro.webp 256w"
+            sizes="(max-width: 640px) 32px, (max-width: 1024px) 48px, 64px"
           />
 
           {/* Desktop nav */}

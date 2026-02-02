@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react';
+import openaiImg from '../assets/openai.webp';
+import repeatImg from '../assets/repeat.webp';
 
 const PostsSection = () => {
   const [posts, setPosts] = useState<any[]>([]);
@@ -19,10 +21,10 @@ const PostsSection = () => {
                     [&::-webkit-scrollbar-track]:bg-transparent">
       {/* Botón Siguiendo */}
       <div className="mb-4 gap-4 flex">
-        <button className="bg-slate-900/50 border border-slate-700/50 rounded-full px-6 py-2 text-white hover:bg-slate-800/70 transition-colors">
+        <button className="bg-slate-900/50 border border-slate-700/50 rounded-full px-6 py-2 text-white hover:bg-slate-800/70 transition-colors" aria-label="Ver publicaciones para ti">
           Para ti
         </button>
-        <button className="bg-slate-900/50 border border-slate-700/50 rounded-full px-6 py-2 text-white hover:bg-slate-800/70 transition-colors">
+        <button className="bg-slate-900/50 border border-slate-700/50 rounded-full px-6 py-2 text-white hover:bg-slate-800/70 transition-colors" aria-label="Ver publicaciones de seguidos">
           Siguiendo
         </button>
       </div>
@@ -45,7 +47,7 @@ const PostsSection = () => {
               </div>
             </div>
 
-            <button className="text-slate-400 hover:text-white">
+            <button className="text-slate-400 hover:text-white" aria-label="Más opciones de publicación">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -65,8 +67,15 @@ const PostsSection = () => {
           {/* Imágenes */}
           <div className="mt-3 flex flex-wrap gap-2">
             <img
-              src="../src/assets/openai.webp"
-              className="rounded-2xl border border-slate-700/50 w-100%] object-cover"
+              src={openaiImg}
+              alt="Ilustración generada por IA"
+              width="320"
+              height="180"
+              fetchPriority="auto"
+              loading="lazy"
+              srcSet={`${openaiImg} 1x, ${openaiImg} 2x`}
+              sizes="(max-width: 600px) 100vw, 320px"
+              className="rounded-2xl border border-slate-700/50 w-full object-cover"
             />
           </div>
 
@@ -80,7 +89,16 @@ const PostsSection = () => {
                 {post.comments} 
               </span>
               <span className="hover:text-white cursor-pointer flex row-gap-2 items-center gap-1">
-                <img src="../src/assets/repeat.webp" alt="compartir"/>
+                <img 
+                  src={repeatImg} 
+                  alt="Compartir publicación"
+                  width="24"
+                  height="24"
+                  fetchPriority="auto"
+                  loading="lazy"
+                  srcSet={`${repeatImg} 1x, ${repeatImg} 2x`}
+                  sizes="24px"
+                />
                 {post.reposts}
               </span>
               <span className="hover:text-pink-500 cursor-pointer flex row-gap-2 items-center gap-1">
