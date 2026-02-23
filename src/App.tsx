@@ -5,6 +5,7 @@ import Contacto from './pages/ContactPage';
 import Explorar from './pages/ExplorePage';
 import ComunitiesPage from './pages/ComunitiesPage';
 import SobreNosotros from './pages/SobreNosotros';
+import StudyGuidePage from './pages/StudyGuidePage';
 
 const App = () => {
    return (
@@ -15,6 +16,7 @@ const App = () => {
             <Route path="/Explorar" element={<Explorar/>} />
             <Route path='/Comunidades' element={<ComunitiesPage/>} />
             <Route path='/SobreNosotros' element={<SobreNosotros/>} />
+            <Route path='/Guia' element={<StudyGuidePage/>} />
          </Routes>
       </>
    );

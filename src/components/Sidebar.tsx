@@ -1,9 +1,10 @@
 import { Search, SlidersHorizontal } from 'lucide-react';
 import { useState } from 'react';
 
+type FollowingMap = Record<string, boolean>;
 
 const RightSidebar = () => {
-  const [following, setFollowing] = useState<any>({});
+  const [following, setFollowing] = useState<FollowingMap>({}); 
 
   const trends = [
     { name: 'Chat GPT 5', publications: '1.000.234' },
@@ -18,23 +19,29 @@ const RightSidebar = () => {
     { name: 'MarkZuckerberg', handle: '@markzuckerberg', title: '@Meta', verified: true }
   ];
 
-  const toggleFollow = (handle: string) => {  
-    setFollowing(prev => ({ ...prev, [handle]: !prev[handle] }));
+  const toggleFollow = (handle: string) => {
+    setFollowing(prev => ({
+      ...prev,
+      [handle]: !prev[handle], 
+    }));
   };
 
   return (
-  <div className="min-h-screen w-[490px] from-slate-950 via-blue-950 to-slate-900 p-6 space-y-6">
+    <div className="min-h-screen w-[490px] from-slate-950 via-blue-950 to-slate-900 p-6 space-y-6">
       {/* Search + Filter */}
       <div className="flex gap-3">
         <div className="flex-1 relative">
+          <label htmlFor="sidebar-search" className="sr-only">Buscar</label>
           <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-400" />
           <input
+            id="sidebar-search"
             type="text"
             placeholder="Buscar.."
             className="w-full bg-slate-900/50 border border-slate-700/50 rounded-full py-3 pl-12 pr-4 text-slate-200 placeholder-slate-500 focus:outline-none focus:border-blue-500/50 focus:bg-slate-900/70 transition-all"
+            aria-label="Buscar"
           />
         </div>
-        <button className="bg-slate-900/50 border border-slate-700/50 rounded-full px-5 py-3 text-slate-300 hover:bg-slate-800/70 hover:border-slate-600 transition-all flex items-center gap-2">
+        <button className="bg-slate-900/50 border border-slate-700/50 rounded-full px-5 py-3 text-slate-300 hover:bg-slate-800/70 hover:border-slate-600 transition-all flex items-center gap-2" aria-label="Filtrar resultados">
           <SlidersHorizontal className="w-5 h-5" />
           Filtrar
         </button>
@@ -74,6 +81,7 @@ const RightSidebar = () => {
                 className={`px-6 py-2 rounded-full font-medium transition-all flex-shrink-0 ${
                   following[user.handle] ? 'bg-slate-700/50 text-slate-300 hover:bg-slate-700' : 'bg-blue-600 text-white hover:bg-blue-700'
                 }`}
+                aria-label={following[user.handle] ? `Dejar de seguir a ${user.name}` : `Seguir a ${user.name}`}
               >
                 {following[user.handle] ? 'Siguiendo' : 'Seguir'}
               </button>
