@@ -392,6 +392,7 @@ Verifica compatibilidad de:
 
 Mobile First
 
+```CSS
 .grid-productes {
   display: flex;
   flex-direction: column;
@@ -403,13 +404,14 @@ Mobile First
     flex-wrap: wrap;
   }
 }
-
+```
 Nesting
-
+```CSS
 nav {
   ul { margin: 0; }
   li { display: inline; }
 }
+```
 
 Conceptos clave
 - Mixins
@@ -431,7 +433,10 @@ Elementos que "saltan".
 
 Solución:
 
+
+```html
 <img src="foto.jpg" width="600" height="400">
+```
 
 8️⃣ Test A/B y Hotjar
 
