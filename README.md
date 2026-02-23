@@ -248,12 +248,12 @@ El diseño se adapta a distintos tamaños de pantalla.
 
 ## 📏 Breakpoints comunes
 
-| Dispositivo | Ancho |
-|-------------|-------|
-| Móvil | 576px |
-| Tablet | 768px |
-| Portátil | 992px |
-| PC | 1200px |
+| Dispositivo | Ancho  |
+| ----------- | ------ |
+| Móvil       | 576px  |
+| Tablet      | 768px  |
+| Portátil    | 992px  |
+| PC          | 1200px |
 
 ---
 
@@ -307,27 +307,30 @@ Permitir que personas con discapacidad puedan:
 
 ```html
 <img src="foto.jpg" alt="Descripción clara">
-
+```
 Decorativa:
-
+```html
 <img src="decoracion.png" alt="">
-
+```
 Botón con icono (sin texto)
-
+```html
 <button aria-label="Cerrar menú">
   <i class="icon-x"></i>
 </button>
+```
 
 🏗️ Semántica HTML5
 
 Sustituir <div> por:
 
+```html
 <main> → Solo 1 por página
 <nav>
 <section>
 <article>
 <header>
 <footer>
+```
 
 4️⃣ SEO – Posicionamiento Orgánico (AEA5.2)
 
@@ -389,6 +392,7 @@ Verifica compatibilidad de:
 
 Mobile First
 
+```CSS
 .grid-productes {
   display: flex;
   flex-direction: column;
@@ -400,13 +404,14 @@ Mobile First
     flex-wrap: wrap;
   }
 }
-
+```
 Nesting
-
+```CSS
 nav {
   ul { margin: 0; }
   li { display: inline; }
 }
+```
 
 Conceptos clave
 - Mixins
@@ -428,7 +433,10 @@ Elementos que "saltan".
 
 Solución:
 
+
+```html
 <img src="foto.jpg" width="600" height="400">
+```
 
 8️⃣ Test A/B y Hotjar
 
@@ -463,3 +471,4 @@ Si te dan HTML lleno de <div> y te piden mejorar SEO y accesibilidad:
 [ ] Robots.txt correcto
 [ ] Sitemap.xml generado
 [ ] Lighthouse > 80 en todo
+
