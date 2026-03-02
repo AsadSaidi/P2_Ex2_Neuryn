@@ -2,13 +2,14 @@ import React, { Suspense } from "react";
 const Footer = React.lazy(() => import("../components/Footer"));
 const Formulario = React.lazy(() => import("../components/Form"));
 import { Header } from "../components/Header";
+import "../styles/contact.scss";
 
 const Contacto = () => {
   return (
-    <main className="bg-gradient-to-br from-slate-950 via-blue-950 to-slate-900 min-h-screen flex flex-col">
+    <main className="contact-page">
       <Header />
       <section
-        className="flex-1 flex items-center justify-center px-2 sm:px-4 py-6"
+        className="contact-page__main"
         aria-label="Formulario de contacto"
       >
         <Suspense fallback={<div className="text-white">Cargando...</div>}>

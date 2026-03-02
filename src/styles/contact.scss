@@ -1,0 +1,156 @@
+@use "./variables" as *;
+
+// Estilos específicos para la página de contacto (Mobile First)
+
+.contact-page {
+  min-height: 100vh;
+  background: radial-gradient(circle at top, #0f172a, $color-bg-dark);
+  color: $color-text-main;
+  font-family: $font-family-main;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-page__main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-inline: $space-3;
+  padding-block: $space-6;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 28rem; // ~448px para móvil
+  padding: $space-8;
+  border-radius: $radius-xl;
+  border: 1px solid $color-border-soft;
+  background: $color-bg-card;
+  box-shadow: $shadow-soft;
+
+  // Nitidez / claridad del panel
+  backdrop-filter: blur(16px) saturate(140%);
+  -webkit-backdrop-filter: blur(16px) saturate(140%);
+}
+
+.contact-card__title {
+  font-size: $font-size-2xl;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: $space-6;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: $space-4;
+}
+
+.contact-form__field {
+  display: flex;
+  flex-direction: column;
+  gap: $space-2;
+  font-size: $font-size-lg;
+}
+
+.contact-form__input,
+.contact-form__textarea {
+  background-color: rgba(15, 23, 42, 0.8);
+  border-radius: $radius-lg;
+  border: 1px solid $color-border-soft;
+  padding-inline: $space-4;
+  padding-block: $space-3;
+  color: $color-text-main;
+  font-size: $font-size-base;
+  transition: border-color 0.2s ease, background-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  &:focus-visible {
+    outline: none;
+    border-color: $color-accent-soft;
+    background-color: rgba(15, 23, 42, 0.95);
+    box-shadow: 0 0 0 1px $color-accent-soft;
+  }
+}
+
+.contact-form__textarea {
+  min-height: 9.5rem; // ~150px
+  resize: vertical;
+}
+
+// Botón principal con condicional Sass
+.contact-form__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: $space-2;
+  margin-top: $space-2;
+  padding-inline: $space-8;
+  padding-block: $space-3;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: $font-size-lg;
+  background: linear-gradient(135deg, $color-accent, $color-accent-soft);
+  color: $color-text-main;
+  transition: transform 0.15s ease, box-shadow 0.15s ease,
+    filter 0.15s ease;
+
+  @if $contact-enable-glow {
+    box-shadow: 0 0 22px rgba(37, 99, 235, 0.55);
+  } @else {
+    box-shadow: none;
+  }
+
+  &:hover {
+    filter: brightness(1.05);
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+    filter: brightness(0.98);
+  }
+}
+
+.contact-form__success {
+  margin-top: $space-4;
+  text-align: center;
+  font-weight: 600;
+  color: $color-success;
+}
+
+// Bucle Sass para espaciados verticales progresivos entre elementos del formulario
+$contact-gaps: (1: $space-4, 2: $space-6, 3: $space-8);
+
+@each $level, $gap in $contact-gaps {
+  .contact-form--gap-#{$level} {
+    row-gap: $gap;
+  }
+}
+
+// Breakpoint Tablet (min-width: 768px)
+@media (min-width: $bp-tablet) {
+  .contact-card {
+    max-width: 36rem;
+    padding: $space-10;
+  }
+
+  .contact-card__title {
+    font-size: 2.25rem;
+  }
+}
+
+// Breakpoint Desktop (min-width: 1024px)
+@media (min-width: $bp-desktop) {
+  .contact-page__main {
+    padding-block: $space-12;
+  }
+
+  .contact-card {
+    max-width: 40rem;
+  }
+}
+
